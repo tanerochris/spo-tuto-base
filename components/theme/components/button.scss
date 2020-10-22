@@ -1,0 +1,20 @@
+@import '_typography';
+// button
+.button.is-primary.is-outlined {
+    border-color: $primary-outline;
+}
+.button.is-accent {
+    border-color: $accent-outline;
+    background-color: $accent;
+    color: $white;
+}
+.button.is-accent.is-outlined {
+    border-color: $accent-outline;
+    background-color: inherit;
+}
+
+.button.small {
+    padding: 5px;
+    border: none;
+    font-size: 10pt;
+}

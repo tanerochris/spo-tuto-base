@@ -1,0 +1,45 @@
+.payment-modal{
+
+    .modal-content {
+        padding: 10px;
+        overflow-x: hidden;
+        max-height: max-content ;
+        border-radius: 2%;
+    }
+}
+.payment-widget-container {
+    .payment-amount {
+        display:flex;
+        .amount {
+            display: inline-flex;
+            align-items: center;
+            .currency {
+                margin: 2px;
+                font-weight: bold;
+            }
+            .input {
+                width: 8em;
+                border-color: blueviolet;
+            }
+        }
+        .payment-methods-icon {
+            display: inline-flex;
+        }
+    }
+    .payment-methods-content {
+        div.field {
+            margin-bottom: 5px;
+        }
+    }
+    .action.field {
+        display: inline-flex;
+        align-items: center;
+        button {
+            min-width: 10em;
+        }
+        .percentage-text {
+            margin-left: 5px;
+            font-size: 10pt;
+        }
+    }
+}

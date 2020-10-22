@@ -1,0 +1,193 @@
+@import './colors';
+@import './_typography.scss';
+@import 'bulma';
+@import './components/button.scss';
+@import './components/header.scss';
+@import './components/campaingList.scss';
+@import './components/campaign.scss';
+@import './components/payment.scss';
+
+html, body {
+    height: 100%;
+    background-color: $background;
+}
+#__next {
+    height: inherit;
+}
+.bg-primary {
+    background: $primary-bg;
+    color: $white !important;
+}
+.bg-secondary {
+    background: $secondary-bg;
+    color: $white;
+}
+.bg-other {
+    background: $tertiary-bg;
+    color: $white;
+}
+.bg-default {
+    background: $default-bg;
+    color: $primary
+}
+
+// mast header
+.mast {
+    background-color: #6d00c7a4;
+    position: relative;
+    margin-top: -20px;
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 70vh;
+    }
+    .mast-content {
+        width: inherit;
+        height: inherit;
+        word-wrap: break-word;
+        position: absolute;
+        top: 0;
+        padding: 1%;
+        .mast-headers {
+            display: flex;
+            flex-direction: column;
+            .mast-header {
+                word-wrap: break-word;
+                color: $primary-header-color;
+                font-weight: 700;
+                font-size: 5vw;
+            }
+            .mast-subheader {
+                word-wrap: break-word;
+                color: $white;
+                font-weight: 500;
+                font-size: 3vw;
+            }
+            .mast-actions {
+                button {
+                    margin-right: 1em;
+                }  
+            }
+        }
+    }
+}
+// summary statistics
+.summaryStatContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .summaryItem {
+        text-align: center;
+        flex-grow: 1;
+        flex-basis: 10em;
+        height: 8em;
+        align-content: center;
+        align-items: center;
+        padding: 2em;
+        p.label- {
+            font-weight: 700;
+            font-size: 18pt;
+        }
+        p.value {
+            font-size: 14pt;
+        }
+
+    }
+}
+// auth-container (login/signup)
+.auth-container {
+    background-color: $tertiary-bg;
+    width: 50%;
+    height: 40%;
+    position: relative;
+    left: 25%;
+    top: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    & > div {
+        margin: 10px;
+        .social-button {
+            height: 4em;
+            font-size: large !important;
+            padding: 15px !important;
+            color: white !important;
+            border: none !important;
+            font-weight: bold !important;
+            width: 15em;
+        }
+        .fb-button {
+            background: #4267B2;
+        }
+    }
+}
+// payment page
+.payment-container {
+    width: 75%;
+    min-width: 10em;
+    height: 40%;
+    position: relative;
+    left: 13%;
+    top: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    text-align: center;
+    & > div {
+        margin-bottom: 10px;
+        &.card-otp {
+            & > div {
+                margin-bottom: 10px;            
+            }
+        }
+        &.processing {
+            font-size: 14pt;
+            font-weight: 500;
+        } 
+    }
+}
+// transaction container
+.transaction-container {
+    padding-top: 2em;
+    .transaction-header {
+        padding: 1em 2em;
+        .header {
+            display: flex;
+            text-align: right;
+            align-items: center;
+            justify-content: space-between;
+            h2 {
+                font-size: large;
+            }
+            button {
+                width: 8em;
+                border-radius: 0;
+            }
+        }
+        .sub-header {   
+            .balances {
+                font-weight: 700;
+                font-size: medium;
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 0.4em;
+                span {
+                    margin-right: 1.1em;
+                }
+            }
+
+        }
+    }
+    .transaction-content {
+        table {
+            width: 100%;
+        }
+    }
+}

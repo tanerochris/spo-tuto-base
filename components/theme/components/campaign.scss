@@ -1,0 +1,136 @@
+.campaign {
+    padding: 0;
+    background: $white;
+    .campaign-header {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 25rem;
+        button.change-cover {
+            position: absolute;
+            right: 3%;
+            z-index: 1000;
+            top: 11px;
+            border: none;
+            background-color: $default;
+
+        }
+        img {
+            height: auto;
+            display: block; /* remove extra space below image */
+        }
+        .campaign-title {
+            position: absolute;
+            bottom: 0;
+            z-index: 1000;
+            width: 100%;
+            padding: 1em;
+            align-items: center;
+            text-align: center;
+            #title {
+                min-height: 3em;
+                height: auto;
+                font-size: 18pt;
+                font-weight: 500;
+                width: 90%;
+                text-align: left;
+                display: inline-block;
+                padding: 0.5em 0.1em 0.1em 0.1em;
+                border: none;
+                opacity: 0.6;
+                outline: none;
+                &:focus {
+                    border-color: $primary-outline; 
+                    opacity: 1;
+                }  
+            }
+        }
+    }
+    .campaign-description {
+        padding: 2em 2em;
+        #description {
+            min-height: 3em;
+            height: auto;
+            font-size: 14pt;
+            font-weight: 400;
+            width: 100%;
+            opacity: 0.6;
+            border: none;
+            &:focus {
+                opacity: 1;
+                outline: none;
+            }
+        }
+    }
+    .objective {
+        padding: 2em 2em;
+        & > div {
+            margin-bottom: 1em;
+        }
+        .select-objective {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .title {
+                color: inherit;
+                font-size: 12pt;
+                font-weight: bold;
+                display: contents;
+            }
+            select {
+                display: inline-block;
+                font-size: 11pt;
+                height: 3em;
+                width: 80%;
+                padding: 0.4em;
+                option {
+                    height: 2em;
+                }
+            }
+        }
+    }
+    .free-sponsored {
+        padding: 0em 2em;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .title {
+            color: inherit;
+            font-size: 12pt;
+            font-weight: bold;
+            display: contents;
+        }
+    }
+    .reward {
+        padding: 2em 2em;
+        .title {
+            font-size: 12pt;
+            color: inherit;
+        }
+        .reward-items {
+            input {
+                width: 8em;
+                border: none;
+                border-bottom: solid 1px $default;
+                height: 2em;
+                margin-bottom: 1em;
+            }
+        }
+
+
+    }
+    .payment {
+        padding: 1em 2em;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        button {
+            width: 12em;
+            margin: 0.5em;
+            &.is-accent{
+                color: $primary;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import '_typography';
+// header
+header {
+    background-color: $primary-header-color;
+    .navbar {
+        &  .navbar-item {
+            & > a {
+                color: $white;
+            }
+        }
+        & .button {
+            border-radius: 0;
+            &:hover {
+                background-color: $hover-focus-primary;
+            }
+        }
+        & .input {
+            border-radius: 0;
+            background-color: #7a6c8b9d;
+            border-color:  #210d3c;
+            color: $white;
+            margin: 0;
+            &::placeholder {
+                color: #07010f;
+            }
+            &:focus{
+                border-color: $hover-focus-primary;
+                border-width: 0.001em;
+            }
+        }
+    }
+}
