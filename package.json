@@ -13,6 +13,7 @@
     "mongoose": "^5.10.9",
     "next": "9.5.3",
     "next-session": "^3.3.2",
+    "properties-reader": "^2.1.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "sass": "^1.27.0"
