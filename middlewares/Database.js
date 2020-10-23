@@ -3,7 +3,7 @@ import path from 'path';
 import PropertiesReader from 'properties-reader';
 // import '../models/all';
 
-const properties = PropertiesReader(path.resolve('voxnostra.properties'));
+const properties = PropertiesReader(path.resolve('app.properties'));
 const mongoDbProp = 'project.app.mongodb.devUrl';
 const mongooseUrl = process.env.MONGOB_URL || properties.get(mongoDbProp);
 

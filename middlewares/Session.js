@@ -3,7 +3,7 @@ import { applySession, MemoryStore, Store, promisifyStore } from 'next-session';
 import PropertiesReader from 'properties-reader';
 
 const MongoStore = connectMongo({ Store, MemoryStore });
-const properties = PropertiesReader('voxnostra.properties');
+const properties = PropertiesReader('app.properties');
 const mongoDbProp = 'project.app.mongodb.devUrl';
 const mongooseUrl = process.env.MONGOB_URL || properties.get(mongoDbProp);
 
