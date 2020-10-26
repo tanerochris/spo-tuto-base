@@ -1,4 +1,6 @@
 import AppHeader from '../components/partials/appHeader';
+import { getSession } from '../helpers/session-helpers';
+
 export default function Home({session}) {
   return (
     <>
@@ -11,7 +13,7 @@ export default function Home({session}) {
              Welcome to the base SPO application. We shall be building from here.
           </div>
           <div className="column"></div>
-        </div>
+         </div>
       </main>
     </>
   )
