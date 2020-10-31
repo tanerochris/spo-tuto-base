@@ -8,14 +8,22 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "bulma": "^0.9.1",
     "connect-mongo": "^3.2.0",
+    "flutterwave-node-v3": "^1.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
     "mongoose": "^5.10.9",
     "next": "9.5.3",
     "next-session": "^3.3.2",
     "properties-reader": "^2.1.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "sass": "^1.27.0"
+    "react-facebook-login": "^4.1.1",
+    "react-payment-icons-inline": "^1.0.22",
+    "react-payment-inputs": "^1.1.7",
+    "sass": "^1.27.0",
+    "styled-components": "^5.2.0"
   }
 }

@@ -5,9 +5,8 @@ const UserStatics = {
     if (select) {
       query.select(select);
     }
-
     return query;
   }
 };
 
-module.exports = UserStatics;
+export default UserStatics;

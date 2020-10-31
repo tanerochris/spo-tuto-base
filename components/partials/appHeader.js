@@ -34,10 +34,10 @@ const AppHeader = ({ session, errorMessage}) =>  {
                     </div>
                   </li>
                   {
-                    session ? 
+                    session.user ? 
                     <>
                       <li className="navbar-item"><a  className="button is-accent" href="/transactions">Transactions</a></li>
-                      <li className="navbar-item"> {session.user.firstName}</li>
+                      <li className="navbar-item"> {session?.user?.firstName}</li>
                     </> :
                     <>
                       <li className="navbar-item"><a  className="button is-accent" href="/login">Login</a></li>

@@ -1,10 +1,7 @@
-import moment from 'moment';
-import mongoose from 'mongoose';
-import { ApiResponseError } from '../../../helpers/api-errors';
 import { setUserSession } from '../../../helpers/auth-helpers';
+import { ApiResponseError } from '../../../helpers/api-errors';
 import Middleware from '../../../middlewares';
-
-const User = mongoose.model('User');
+import User from '../../../models/user/user.model';
 
 /**
  * Logs in, set user information on session object

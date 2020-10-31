@@ -1,6 +1,5 @@
-const mongoose = require('mongoose');
-const PasswordSchema = require('./password/password.schema');
-const UserStatics = require('./user.statics');
+import mongoose from 'mongoose';
+import UserStatics from './user.statics';
 
 const UserSchema = new mongoose.Schema(
   {
@@ -22,9 +21,6 @@ const UserSchema = new mongoose.Schema(
     providerAccessToken: String,
     providerUserId: String,
     profilePic: String,
-    password: {
-      type: PasswordSchema
-    }
   },
   {
     timestamps: true
@@ -32,6 +28,5 @@ const UserSchema = new mongoose.Schema(
 );
 
 UserSchema.statics = UserStatics;
-const User = mongoose.model('User', UserSchema);
 
-module.exports = User;
+export default mongoose.models.User || mongoose.model('User', UserSchema);
